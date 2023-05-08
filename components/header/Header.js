@@ -4,10 +4,6 @@ import ImgHeader from "../../images/header.jpg";
 import Facebook from "../../images/facebook.svg";
 import Instagram from "../../images/instagram.svg";
 import Tiktok from "../../images/tiktok.svg";
-import Dog from "../../images/dog.png";
-import Fox from "../../images/fox.png";
-import women from "../../images/women.png";
-import flower from "../../images/smallflower.png";
 import Link from "next/link";
 const Header = () => {
   return (
