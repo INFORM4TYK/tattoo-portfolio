@@ -1,0 +1,61 @@
+.listContainer {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  background-color: var(--dark-color);
+  padding: 2rem 0;
+  transition: transform 2s ease;
+}
+.listBoxes {
+  position: relative;
+  border-bottom: 5px dashed var(--sec-color);
+  border-top: 5px dashed var(--sec-color);
+  display: inline-flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 4rem;
+  gap: 4rem;
+}
+.box {
+  margin: 2rem 0;
+  background-color: var(--sec-color);
+  min-width: calc((100% - 12rem) / 4);
+  min-height: 400px;
+}
+.leftArrow,
+.rightArrow {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-15px);
+  background-color: rgba(240, 255, 255, 0.274);
+}
+.leftArrow {
+  right: -3px;
+}
+.rightArrow {
+  left: -3px;
+}
+@media (max-width: 1320px) {
+  .box {
+    min-width: calc((100% - 8rem) / 3);
+  }
+}
+@media (max-width: 940px) {
+  .box {
+    min-width: calc((100% - 4rem) / 2);
+  }
+}
+@media (max-width: 680px) {
+  .listBoxes {
+    padding: 0 2rem;
+  }
+  .box {
+    min-width: 100%;
+  }
+}

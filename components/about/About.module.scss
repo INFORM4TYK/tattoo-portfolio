@@ -1,48 +1,69 @@
-.mainSec{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding: 2rem;
-    background-color: var(--sec-color);
+.mainSec {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 2rem;
+  background-color: var(--sec-color);
+  max-height: fit-content;
 }
-.mainContent{
-    max-width: 1200px;
-    h2{
-        font-size: var(--fs-large);
-    }
-    p{
-        margin-top: 2rem;
-        font-size: var(--fs-big);
-        line-height: 2rem;
-    }
-}
-.secImage{
-    display: grid;
-    place-items: center;
+.mainContent {
+  position: relative;
+  max-width: 1200px;
+  flex: 1;
+  h2 {
+    font-size: var(--fs-large);
+  }
+  p {
+    margin-top: 1rem;
+    font-size: var(--fs-big);
+    line-height: 2rem;
+  }
+  h2::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -40px;
     width: 100%;
-    img{
-        padding-top: 2rem;
-        max-height: 40vh;
-        width: auto;
-    }
+    height: 200px;
+    opacity: .3;
+    background: url(../../images/fox.png) 3% 40% / 200px auto no-repeat;
+  }
 }
-@media (max-width: 1024px) {
-    .mainContent{
-        p{
-             font-size: var(--fs-medium);
-            line-height: normal;
-        }
+.secImage {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  img {
+    padding-top: 2rem;
+    width: auto;
+    max-height: 400px;
+  }
+}
+@media (max-width: 1124px) {
+  .mainContent {
+    p {
+      margin-top: .5rem;
+      font-size: var(--fs-medium);
+      line-height: normal;
     }
   }
-  @media (max-width: 760px) {
-    .mainContent{
-        p{
-             font-size: var(--fs-small);
-        }
-    }
-    .mainSec{
-        padding: 1rem;
-        flex-direction:column;
+  .secImage {
+    img {
+      padding-top: 2rem;
+      max-height: 300px;
     }
   }
+}
+@media (max-width: 760px) {
+  .mainContent {
+    p {
+      font-size: var(--fs-small);
+    }
+  }
+  .mainSec {
+    padding: 1rem;
+    flex-direction: column;
+  }
+}

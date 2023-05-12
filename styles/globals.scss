@@ -6,8 +6,7 @@
   --main-color: #D9C0A3;
   --dark-color: #593D2D;
   --sec-color: #BFA58E;
-  --text-dark : #593D2D;
-  --text-light: #4F250B;
+  --text-dark: #4F250B;
   --fs-xsmall: 0.7rem;
   --fs-small: 0.9rem;
   --fs-medium: 1.2rem;
@@ -33,6 +32,7 @@ html {
 *,
 *::after,
 *::before {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }

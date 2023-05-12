@@ -12,6 +12,7 @@
   justify-content: center;
   flex-direction: column;
   p {
+    z-index: 1;
     font-weight: 700;
     color: var(--text-dark);
     font-size: var(--fs-xxlarge);
@@ -61,12 +62,17 @@
     align-items: center;
     flex-direction: row;
   }
+  a{
+    z-index: 1;
+    cursor: pointer;
+  }
   img {
     margin-left: 1rem;
     width: 40px;
     height: auto;
   }
   button {
+    z-index: 1;
     height: 50px;
     width: 200px;
     border: 2px solid var(--dark-color);
@@ -90,8 +96,6 @@
     border-radius: 2px;
   }
 }
-
-
 @media (max-width: 1150px) {
   .header {
     display: flex;
@@ -132,6 +136,10 @@
   .secmain::after {
     display: none;
   }
+  .secmain:before {
+    background-position: 3% 40%;
+    background-size: clamp(70%, 85% , 90%) auto;
+  }
   .mainText {
     display: grid;
     place-items: center;
@@ -148,10 +156,7 @@
   }
 }
 @media (max-width: 480px) {
-  .secmain:before {
-    background-position: 3% 40%;
-    background-size: 250px auto;
-  }
+ 
   .secContact {
     width: 100%;
     padding: 0 0.2rem;
