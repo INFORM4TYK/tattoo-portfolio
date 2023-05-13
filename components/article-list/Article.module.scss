@@ -1,6 +1,7 @@
 .listContainer {
   position: relative;
   width: 100%;
+  overflow: hidden;
   height: fit-content;
   background-color: var(--dark-color);
   padding: 2rem 0;
@@ -15,14 +16,13 @@
   box-sizing: border-box;
   max-width: 100%;
   width: 100%;
-  overflow: hidden;
-  padding: 0 4rem;
-  gap: 4rem;
+  transition: transform 1s;
 }
 .box {
   margin: 2rem 0;
+  margin-inline: 2rem;
   background-color: var(--sec-color);
-  min-width: calc((100% - 12rem) / 4);
+  min-width: calc((100% - 16rem) / 4);
   min-height: 400px;
 }
 .leftArrow,
@@ -43,19 +43,16 @@
 }
 @media (max-width: 1320px) {
   .box {
-    min-width: calc((100% - 8rem) / 3);
+    min-width: calc((100% - 12rem) / 3);
   }
 }
 @media (max-width: 940px) {
   .box {
-    min-width: calc((100% - 4rem) / 2);
+    min-width: calc((100% - 8rem) / 2);
   }
 }
 @media (max-width: 680px) {
-  .listBoxes {
-    padding: 0 2rem;
-  }
   .box {
-    min-width: 100%;
+    min-width: calc((100% - 4rem) / 1);
   }
 }
