@@ -6,6 +6,9 @@
   grid-template-columns: 1fr 1fr;
   gap: 0 3rem;
   padding: 0 2rem;
+  a{
+    color: var(--main-color);
+  }
 }
 .secmain {
   display: flex;

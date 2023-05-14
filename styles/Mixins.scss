@@ -3,7 +3,6 @@
     background-color: var(--dark-color);
     border-radius: 5px;
     border: none;
-    color: var(--main-color);
     display: inline-block;
     font-size: 15px;
     font-weight: 700;
@@ -12,6 +11,7 @@
     text-align: center;
     text-transform: uppercase;
     user-select: none;
+    
     button:disabled {
       cursor: auto;
     }
