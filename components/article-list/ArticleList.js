@@ -6,59 +6,59 @@ import useWindowDimensions from "../../hooks/useWindowDimensions";
 import { useEffect, useState } from "react";
 import { Article } from "./Article";
 
+export const news = [
+   {
+     title: "Akt1",
+     body: "Blah Blah Blah",
+     topic: "Flower",
+   },
+   {
+     title: "Akt2",
+     body: "Blah Blah Blah",
+     topic: "Flower",
+   },
+   {
+     title: "Akt3",
+     body: "Blah Blah Blah",
+     topic: "Flower",
+   },
+   {
+     title: "Akt4",
+     body: "Blah Blah Blah",
+     topic: "Flower",
+   },
+   {
+     title: "Akt5",
+     body: "Blah Blah Blah",
+     topic: "Flower",
+   },
+   {
+     title: "Akt6",
+     body: "Blah Blah Blah",
+     topic: "Flower",
+   },
+   {
+     title: "Akt7",
+     body: "Blah Blah Blah",
+     topic: "Flower",
+   },
+   {
+     title: "Akt8",
+     body: "Blah Blah Blah",
+     topic: "Flower",
+   },
+   {
+     title: "Akt9",
+     body: "Blah Blah Blah",
+     topic: "Flower",
+   },
+   {
+     title: "Akt10",
+     body: "Blah Blah Blah",
+     topic: "Flower",
+   },
+ ];
 const ArticleList = () => {
-  const news = [
-    {
-      title: "Akt1",
-      body: "Blah Blah Blah",
-      topic: "Flower",
-    },
-    {
-      title: "Akt2",
-      body: "Blah Blah Blah",
-      topic: "Flower",
-    },
-    {
-      title: "Akt3",
-      body: "Blah Blah Blah",
-      topic: "Flower",
-    },
-    {
-      title: "Akt4",
-      body: "Blah Blah Blah",
-      topic: "Flower",
-    },
-    {
-      title: "Akt5",
-      body: "Blah Blah Blah",
-      topic: "Flower",
-    },
-    {
-      title: "Akt6",
-      body: "Blah Blah Blah",
-      topic: "Flower",
-    },
-    {
-      title: "Akt7",
-      body: "Blah Blah Blah",
-      topic: "Flower",
-    },
-    {
-      title: "Akt8",
-      body: "Blah Blah Blah",
-      topic: "Flower",
-    },
-    {
-      title: "Akt9",
-      body: "Blah Blah Blah",
-      topic: "Flower",
-    },
-    {
-      title: "Akt10",
-      body: "Blah Blah Blah",
-      topic: "Flower",
-    },
-  ];
   const { width } = useWindowDimensions();
   const [currentVisibleArticle, setCurrentVisibleArticle] = useState(0);
   useEffect(() => {
@@ -93,10 +93,11 @@ const ArticleList = () => {
   };
 
   return (
-    <div
+    <article
       className={styles.listContainer}
       currentVisibleArticle={currentVisibleArticle}
     >
+      
       <Article news={news} currentVisibleArticle={currentVisibleArticle} width={width}/>
       <Image
         src={LeftArrow}
@@ -110,7 +111,7 @@ const ArticleList = () => {
         onClick={prevNews}
         alt="rightArrow"
       />
-    </div>
+    </article>
   );
 };
 

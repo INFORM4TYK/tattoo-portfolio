@@ -6,6 +6,12 @@
   background-color: var(--dark-color);
   padding: 2rem 0;
   transition: transform 2s ease;
+  h1{
+    text-align: center;
+    color: var(--main-color);
+    font-size: var(--fs-large);
+    margin-top: 1rem;
+  }
 }
 .listBoxes {
   position: relative;
@@ -20,6 +26,12 @@
 .border{
   border-bottom: 5px dashed var(--sec-color);
   border-top: 5px dashed var(--sec-color);
+  button{
+    margin: 0 0 1rem 2rem; 
+    min-width: max(25%, 200px);
+    background-color: var(--main-color);
+    color: var(--dark-color);
+  }
 }
 .box {
   margin: 2rem 0;

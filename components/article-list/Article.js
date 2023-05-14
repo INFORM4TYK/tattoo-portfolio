@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Article.module.scss";
+import Link from "next/link";
 export const Article = ({ news, currentVisibleArticle, width }) => {
   const [visibleColumns, setVisibleColumns] = useState(1);
   useEffect(() => {
@@ -14,24 +15,27 @@ export const Article = ({ news, currentVisibleArticle, width }) => {
     }
   }, [width]);
   return (
-    // <div className={styles.border}>
-    <div
-      className={styles.listBoxes}
-      style={{
-        transform: `translateX(calc(${currentVisibleArticle} / ${visibleColumns} * -100%))`,
-      }}
-    >
-      {news.map(({ title, body, topic }) => {
-        return (
-          <div key={title} className={styles.box}>
-            <h3>{title}</h3>
-            <p>{body}</p>
-            <p>{topic}</p>
-          </div>
-        );
-      })}
+    <div className={styles.border}>
+      <h1>Moje Prace</h1>
+      <div
+        className={styles.listBoxes}
+        style={{
+          transform: `translateX(calc(${currentVisibleArticle} / ${visibleColumns} * -100%))`,
+        }}
+      >
+        {news.map(({ title, body, topic }) => {
+          return (
+            <div key={title} className={styles.box}>
+              <h3>{title}</h3>
+              <p>{body}</p>
+              <p>{topic}</p>
+            </div>
+          );
+        })}
+      </div>
+      <Link href='galeria'>
+      <button className="button">Zobacz Galerie</button>
+      </Link>
     </div>
-
-    // </div>
   );
 };

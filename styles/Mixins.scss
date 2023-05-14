@@ -1,0 +1,25 @@
+.button {
+    appearance: button;
+    background-color: var(--dark-color);
+    border-radius: 5px;
+    border: none;
+    color: var(--main-color);
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+    padding: 13px 19px;
+    text-align: center;
+    text-transform: uppercase;
+    user-select: none;
+    button:disabled {
+      cursor: auto;
+    }
+    button:active:after {
+      border-width: 0 0 0px;
+    }
+    button:active {
+      padding-bottom: 10px;
+    }
+  }
+

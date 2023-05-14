@@ -1,5 +1,6 @@
 import { FormElement } from "../utils/FormInput";
 import styles from "./Contact.module.scss";
+
 import { useState } from "react";
 import axios from "axios";
 import Link from "next/link";
@@ -128,8 +129,7 @@ const Contact = () => {
   };
   return (
     <div id="contact" className={styles.container}>
-    
-      <section className={styles.secForm}>
+      <section className={styles.secForm} id="contact">
         <h1>Skontaktuj się ze mną</h1>
         <form
           noValidate
@@ -150,8 +150,13 @@ const Contact = () => {
             );
           })}
           <div>
-            <button type="submit" disabled={disable()} onClick={onClick}>
-             Wyślij
+            <button
+              type="submit"
+              disabled={disable()}
+              onClick={onClick}
+              className="button"
+            >
+              Wyślij
             </button>
             {serverState.status && (
               <p className={!serverState.status.ok ? "errorMsg" : ""}>
@@ -162,21 +167,19 @@ const Contact = () => {
         </form>
       </section>
       <section className={styles.secContact}>
-        
-      <div>
+        <div>
           <Link href="tel:516598487" target="_blank">
             <Image src={Phone} alt="telefon" />
-          <p>516 598 487</p>
+            <p>516 598 487</p>
           </Link>
         </div>
         <div>
-          
           <Link
             href="https://www.facebook.com/wiktoria.woznicka.52"
             target="_blank"
           >
             <Image src={Facebook} alt="facebook" />
-          <p>Facebook</p>
+            <p>Facebook</p>
           </Link>
         </div>
         <div>
@@ -185,17 +188,15 @@ const Contact = () => {
             target="_blank"
           >
             <Image src={Instagram} alt="instagram" />
-          <p>Instagram</p>
+            <p>Instagram</p>
           </Link>
         </div>
         <div>
           <Link href="#" target="_blank">
-            <Image src={Tiktok} alt="tiktok"
-            />
-          <p>TikTok</p>
+            <Image src={Tiktok} alt="tiktok" />
+            <p>TikTok</p>
           </Link>
         </div>
-        
       </section>
     </div>
   );

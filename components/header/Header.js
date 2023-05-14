@@ -34,7 +34,7 @@ const Header = () => {
             </Link>
           </div>
           <div>
-            <button>Skontaktuj się</button>
+            <button><a href="#contact">Skontaktuj się</a></button>
           </div>
         </section>
       </section>

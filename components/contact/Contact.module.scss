@@ -37,52 +37,7 @@
       justify-content: center;
       align-items: center;
     }
-    button {
-      appearance: button;
-      background-color: var(--dark-color);
-      border-radius: 5px;
-      border-width: 0 0 4px;
-      color: var(--main-color);
-      display: inline-block;
-      font-size: 15px;
-      font-weight: 700;
-      margin: 0;
-      overflow: visible;
-      padding: 13px 19px;
-      text-align: center;
-      text-transform: uppercase;
-      touch-action: manipulation;
-      transform: translateZ(0);
-      transition: filter 0.2s;
-      user-select: none;
-    }
-
-    button:after {
-      background-clip: padding-box;
-      background-color: var(--dark-color);
-      border: solid transparent;
-      border-radius: 5px;
-      border-width: 0 0 4px;
-      bottom: -4px;
-      content: "";
-      left: 0;
-      position: absolute;
-      right: 0;
-      top: 0;
-      z-index: -1;
-    }
-    button:hover:not(:disabled) {
-      filter: brightness(1.1);
-    }
-    button:disabled {
-      cursor: auto;
-    }
-    button:active:after {
-      border-width: 0 0 0px;
-    }
-    button:active {
-      padding-bottom: 10px;
-    }
+    
   }
   label > span {
     color: red;

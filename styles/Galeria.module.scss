@@ -1,0 +1,15 @@
+.container{
+    background-color: var(--main-color);
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.boxes{
+    background-color: rgb(255, 255, 255);
+    margin: 1rem;
+    width: 100%;
+    max-width: 300px;
+    min-height: 400px;
+}
