@@ -5,6 +5,7 @@
   flex-wrap: nowrap;
   padding: 2rem;
   background-color: var(--sec-color);
+  color: var(--text-dark);
   max-height: fit-content;
 }
 .mainContent {
@@ -61,9 +62,13 @@
     p {
       font-size: var(--fs-small);
     }
+    h2::after {
+      background: url(../../images/fox.png) 6% 10% / 100px auto no-repeat;
+    }
   }
   .mainSec {
     padding: 1rem;
     flex-direction: column;
   }
+  
 }

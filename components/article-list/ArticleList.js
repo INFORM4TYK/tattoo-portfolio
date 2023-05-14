@@ -58,11 +58,6 @@ const ArticleList = () => {
       body: "Blah Blah Blah",
       topic: "Flower",
     },
-    {
-      title: "Akt10",
-      body: "Blah Blah Blah",
-      topic: "Flower",
-    },
   ];
   const { width } = useWindowDimensions();
   const [currentVisibleArticle, setCurrentVisibleArticle] = useState(0);
@@ -71,24 +66,30 @@ const ArticleList = () => {
   }, [width]);
   const nextNews = (e) => {
     e.preventDefault();
-    if(currentVisibleArticle === news.length - (
-      (width > 1320) ? 9 :
-      (width <= 1320 && width > 940) ? 8 :
-      (width <= 940 && width > 680) ? 6 :
-      (width <= 680) ? 1 :
-      0
-    )){
+    if (
+      currentVisibleArticle ===
+      news.length -
+        (width > 1320
+          ? 4
+          : width <= 1320 && width > 940
+          ? 3
+          : width <= 940 && width > 680
+          ? 2
+          : width <= 680
+          ? 1
+          : 0)
+    ) {
       return null;
     }
-
-    setCurrentVisibleArticle(prev => prev + 1);
-    console.log("next");
+    setCurrentVisibleArticle((prev) => prev + 1);
   };
 
   const prevNews = (e) => {
     e.preventDefault();
-    setCurrentVisibleArticle(prev => prev - 1);
-    console.log("back");
+    if (currentVisibleArticle === 0) {
+      return null;
+    }
+    setCurrentVisibleArticle((prev) => prev - 1);
   };
 
   return (
@@ -96,7 +97,7 @@ const ArticleList = () => {
       className={styles.listContainer}
       currentVisibleArticle={currentVisibleArticle}
     >
-      <Article news={news} currentVisibleArticle={currentVisibleArticle}/>
+      <Article news={news} currentVisibleArticle={currentVisibleArticle} width={width}/>
       <Image
         src={LeftArrow}
         className={styles.leftArrow}

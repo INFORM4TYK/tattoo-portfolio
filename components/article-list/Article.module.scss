@@ -9,14 +9,17 @@
 }
 .listBoxes {
   position: relative;
-  border-bottom: 5px dashed var(--sec-color);
-  border-top: 5px dashed var(--sec-color);
+
   display: inline-flex;
   justify-content: flex-start;
   box-sizing: border-box;
   max-width: 100%;
   width: 100%;
   transition: transform 1s;
+}
+.border{
+  border-bottom: 5px dashed var(--sec-color);
+  border-top: 5px dashed var(--sec-color);
 }
 .box {
   margin: 2rem 0;

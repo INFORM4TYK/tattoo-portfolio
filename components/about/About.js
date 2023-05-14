@@ -6,10 +6,26 @@ const About = () => {
     <section className={styles.mainSec}>
       <article className={styles.mainContent}>
         <h2>O mnie</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo voluptatem qui consequuntur hic?</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, similique. Fugit, optio illum.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, officiis incidunt. Dolor, eveniet?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore doloremque culpa eius?</p>
+        <p>
+          Cześć, jestem Wiktoria i jestem tatuażystką specjalizującą się w
+          lekkich motywach tatuażu. Moja pasja do sztuki zaczęła się już we
+          wczesnym dzieciństwie i z czasem przerodziła się w miłość do tatuażu.
+        </p>
+        <p>
+          Jako tatuażystka, moim celem jest stworzenie wyjątkowego i
+          oryginalnego motywu, który będzie oddawał indywidualność mojego
+          klienta. W swojej pracy stawiam na precyzję i dbam o każdy szczegół,
+          aby uzyskać najlepszy efekt końcowy. Moje projekty są zwykle subtelne,
+          delikatne i mają prostą formę, ale jednocześnie mają znaczenie dla
+          moich klientów. Często inspiruję się naturą, a moje projekty zawierają
+          motywy roślinne, zwierzęce lub geometryczne.
+        </p>
+        <p>
+          Zapraszam Cię do zapoznania się z moim portfolio i do odkrycia mojego
+          stylu i podejścia do tatuażu. Cieszę się na myśl, że będę mógł
+          stworzyć dla Ciebie wyjątkowy motyw, który będziesz zawsze nosić ze
+          sobą z dumą i radością.
+        </p>
       </article>
       <article className={styles.secImage}>
         <Image src={ImgWomen} alt="tattoimg" />

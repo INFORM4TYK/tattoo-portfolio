@@ -15,15 +15,21 @@ const Header = () => {
         </div>
         <section className={styles.secContact}>
           <div>
-            <Link href="https://www.facebook.com/wiktoria.woznicka.52" target="_blank">
+            <Link
+              href="https://www.facebook.com/wiktoria.woznicka.52"
+              target="_blank"
+            >
               <Image src={Facebook} alt="facebook" />
             </Link>
-            <Link href="https://www.instagram.com/victoriu.tattoo/" target="_blank">
+            <Link
+              href="https://www.instagram.com/victoriu.tattoo/"
+              target="_blank"
+            >
               <Image src={Instagram} alt="instagram" />
             </Link>
             <Link href="#" legacyBehavior>
               <a>
-              <Image src={Tiktok} alt="tiktok" />
+                <Image src={Tiktok} alt="tiktok" />
               </a>
             </Link>
           </div>
@@ -33,7 +39,7 @@ const Header = () => {
         </section>
       </section>
       <section className={styles.secimage}>
-        <Image src={ImgHeader} alt="tattoimg" />
+        <Image src={ImgHeader} alt="tattoimg" priority={true} />
       </section>
     </header>
   );

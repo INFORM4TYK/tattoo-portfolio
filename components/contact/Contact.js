@@ -170,7 +170,7 @@ const Contact = () => {
           </Link>
         </div>
         <div>
-          {" "}
+          
           <Link
             href="https://www.facebook.com/wiktoria.woznicka.52"
             target="_blank"
@@ -190,7 +190,8 @@ const Contact = () => {
         </div>
         <div>
           <Link href="#" target="_blank">
-            <Image src={Tiktok} alt="tiktok" />
+            <Image src={Tiktok} alt="tiktok"
+            />
           <p>TikTok</p>
           </Link>
         </div>

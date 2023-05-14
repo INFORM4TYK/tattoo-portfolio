@@ -108,7 +108,7 @@
     img {
       margin: 1rem;
       width: 60px;
-      height: 60px;
+      height: auto;
     }
     p {
       flex: 2;
@@ -153,7 +153,7 @@
   }
   input:invalid[focused="true"],
   textarea:invalid[focused="true"] {
-    border: 1px solid var(--font-red);
+    border: 1px solid red;
   }
   div:nth-child(5) {
     grid-column: 1 / span 2;
@@ -178,6 +178,7 @@
     }
     .secForm,.secContact{
         padding-inline: 6rem;
+        border: none;
     }
 }
 @media (max-width: 700px) {
@@ -211,6 +212,7 @@
       align-items: center;
       flex-direction: row;
       flex-wrap: wrap;
+      padding: 0 1rem;
       p{
         font-size: var(--fs-medium);
       }
