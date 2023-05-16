@@ -6,69 +6,19 @@ import useWindowDimensions from "../../hooks/useWindowDimensions";
 import { useEffect, useState } from "react";
 import { Article } from "./Article";
 
-export const news = [
-   {
-     title: "Akt1",
-     body: "Blah Blah Blah",
-     topic: "Flower",
-   },
-   {
-     title: "Akt2",
-     body: "Blah Blah Blah",
-     topic: "Flower",
-   },
-   {
-     title: "Akt3",
-     body: "Blah Blah Blah",
-     topic: "Flower",
-   },
-   {
-     title: "Akt4",
-     body: "Blah Blah Blah",
-     topic: "Flower",
-   },
-   {
-     title: "Akt5",
-     body: "Blah Blah Blah",
-     topic: "Flower",
-   },
-   {
-     title: "Akt6",
-     body: "Blah Blah Blah",
-     topic: "Flower",
-   },
-   {
-     title: "Akt7",
-     body: "Blah Blah Blah",
-     topic: "Flower",
-   },
-   {
-     title: "Akt8",
-     body: "Blah Blah Blah",
-     topic: "Flower",
-   },
-   {
-     title: "Akt9",
-     body: "Blah Blah Blah",
-     topic: "Flower",
-   },
-   {
-     title: "Akt10",
-     body: "Blah Blah Blah",
-     topic: "Flower",
-   },
- ];
-const ArticleList = () => {
+const ArticleList = ({ aktu }) => {
+  console.log(aktu);
   const { width } = useWindowDimensions();
   const [currentVisibleArticle, setCurrentVisibleArticle] = useState(0);
   useEffect(() => {
     setCurrentVisibleArticle(0);
   }, [width]);
+  console.log(aktu.length);
   const nextNews = (e) => {
     e.preventDefault();
     if (
       currentVisibleArticle ===
-      news.length -
+      aktu.length -
         (width > 1320
           ? 4
           : width <= 1320 && width > 940
@@ -97,8 +47,12 @@ const ArticleList = () => {
       className={styles.listContainer}
       currentVisibleArticle={currentVisibleArticle}
     >
-      
-      <Article news={news} currentVisibleArticle={currentVisibleArticle} width={width}/>
+      <Article
+       aktu={aktu}
+        currentVisibleArticle={currentVisibleArticle}
+        width={width}
+        className={styles.box}
+      />
       <Image
         src={LeftArrow}
         className={styles.leftArrow}

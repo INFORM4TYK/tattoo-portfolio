@@ -1,15 +1,26 @@
 import styles from "../styles/Galeria.module.scss";
-import { news } from "../components/article-list/ArticleList";
 import CustomHelmet from "../components/CustomHelmet";
-export default function Galeria() {
+import { getArticles } from "../lib/Api";
+
+export async function getStaticProps() {
+  const aktu = await getArticles();
+  return {
+    props: {
+      aktu,
+    },
+    revalidate: 1,
+  };
+}
+
+export default function Galeria({ aktu }) {
   return (
     <div className={styles.container}>
-      <CustomHelmet Customtitle='Galeria' />
-      {news.map(({ title, body, topic }) => {
+      <CustomHelmet Customtitle="Galeria" />
+      {aktu.map((item) => {
+        const { title, topic } = item.fields;
         return (
-          <div key={title} className={styles.boxes}>
+          <div key={item.sys.id} className={styles.boxes}>
             <h3>{title}</h3>
-            <p>{body}</p>
             <p>{topic}</p>
           </div>
         );

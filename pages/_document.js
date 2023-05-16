@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="pl">
       <Head>
-        <CustomHelmet />
+        
       </Head>
       <body>
         <Main />
