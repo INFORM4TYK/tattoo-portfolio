@@ -7,13 +7,11 @@ import { useEffect, useState } from "react";
 import { Article } from "./Article";
 
 const ArticleList = ({ aktu }) => {
-  console.log(aktu);
   const { width } = useWindowDimensions();
   const [currentVisibleArticle, setCurrentVisibleArticle] = useState(0);
   useEffect(() => {
     setCurrentVisibleArticle(0);
   }, [width]);
-  console.log(aktu.length);
   const nextNews = (e) => {
     e.preventDefault();
     if (

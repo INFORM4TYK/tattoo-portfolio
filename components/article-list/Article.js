@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Article.module.scss";
 import Link from "next/link";
+import Image from "next/image";
 export const Article = (props) => {
   const { currentVisibleArticle, width, aktu } = props;
   const [visibleColumns, setVisibleColumns] = useState(1);
@@ -21,12 +22,18 @@ export const Article = (props) => {
         }}
       >
         {aktu.map((item) => {
-          const { title, topic } = item.fields;
+          const { title, topic,date, thumbNail } = item.fields;
           const { id } = item.sys;
           return (
-            <div key={id} className={styles.box}>
-              <h3>{title}</h3>
-              <p>{topic}</p>
+            <div key={id} className="box">
+              <Image 
+              src={'https:' + thumbNail.fields.file.url}
+              width={thumbNail.fields.file.details.image.width}
+              height={thumbNail.fields.file.details.image.height}
+              alt={topic}
+              />
+              {/* <h2>Motyw: {title}</h2>
+              <p>{date}</p> */}
             </div>
           );
         })}
