@@ -12,6 +12,12 @@
   position: relative;
   max-width: 1200px;
   flex: 1;
+  button {
+    margin-top: 1rem;
+    min-width: max(25%, 200px);
+    background-color: var(--dark-color);
+    color: var(--main-color);
+  }
   h2 {
     font-size: var(--fs-large);
   }
@@ -42,6 +48,7 @@
     max-height: 400px;
   }
 }
+
 @media (max-width: 1124px) {
   .mainContent {
     p {

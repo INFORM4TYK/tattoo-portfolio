@@ -27,8 +27,8 @@ const Header = () => {
             >
               <Image src={Instagram} alt="instagram" />
             </Link>
-            <Link href="https://www.tiktok.com/@victoriu.tattoo" legacyBehavior>
-              <a>
+            <Link href="https://www.tiktok.com/@victoriu.tattoo"  legacyBehavior>
+              <a target="_blank">
                 <Image src={Tiktok} alt="tiktok" />
               </a>
             </Link>

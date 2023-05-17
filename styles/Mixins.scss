@@ -62,9 +62,13 @@
 }
 @media (max-width: 680px) {
   .box {
-    margin-inline: 15%;
-    max-width: 500px;
-    min-width: calc((100% - 30%) / 1);
+    min-width: calc((100% - 4rem) / 1);
+    display: grid;
+    place-items: center;
+    img{
+      min-width: calc((100% - 4rem) / 1);
+      height: 100%;
+    }
   }
 }
 @media (max-width: 460px) {

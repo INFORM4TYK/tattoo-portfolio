@@ -37,9 +37,7 @@ export const Article = (props) => {
           );
         })}
       </div>
-      <Link href="galeria">
-        <button className="button">Zobacz Galerie</button>
-      </Link>
+      
     </div>
   );
 };

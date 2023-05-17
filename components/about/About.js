@@ -1,6 +1,7 @@
 import styles from "./About.module.scss";
 import ImgWomen from "../../images/women.png";
 import Image from "next/image";
+import Link from "next/link";
 const About = () => {
   return (
     <section className={styles.mainSec}>
@@ -26,6 +27,9 @@ const About = () => {
           stworzyć dla Ciebie wyjątkowy motyw, który będziesz zawsze nosić ze
           sobą z dumą i radością.
         </p>
+      <Link href="galeria">
+        <button className="button">Zobacz Galerie</button>
+      </Link>
       </article>
       <article className={styles.secImage}>
         <Image src={ImgWomen} alt="tattoimg" />
