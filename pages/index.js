@@ -2,6 +2,7 @@ import About from "../components/about/About";
 import Header from "../components/header/Header";
 import ArticleList from "../components/article-list/ArticleList";
 import Contact from "../components/contact/Contact";
+import Footer from "../components/footer/Footer";
 import Head from "next/head";
 import { getArticles } from "../lib/Api";
 export async function getStaticProps() {
@@ -13,7 +14,7 @@ export async function getStaticProps() {
     revalidate: 1,
   };
 }
-export default function Home({aktu}) {
+export default function Home({ aktu }) {
   return (
     <>
       <Head>
@@ -22,8 +23,9 @@ export default function Home({aktu}) {
       </Head>
       <Header />
       <About />
-      <ArticleList aktu={aktu}/>
-      <Contact/>
+      <ArticleList aktu={aktu} />
+      <Contact />
+      <Footer />
     </>
   );
 }

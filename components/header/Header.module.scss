@@ -6,7 +6,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 0 3rem;
   padding: 0 2rem;
-  a{
+  a {
     color: var(--main-color);
   }
 }
@@ -65,24 +65,22 @@
     align-items: center;
     flex-direction: row;
   }
-  a{
+  div:nth-child(2) {
+    width: fit-content;
+  }
+  a {
     z-index: 1;
     cursor: pointer;
   }
+  img:hover {
+    background-color: var(--sec-color);
+    color: var(--text-dark);
+  }
   img {
+    z-index: 1;
     margin-left: 1rem;
     width: 40px;
     height: auto;
-  }
-  button {
-    z-index: 1;
-    height: 50px;
-    width: 200px;
-    border: 2px solid var(--dark-color);
-    border-radius: 10px;
-    background-color: var(--dark-color);
-    color: var(--color-white);
-    font-size: var(--fs-medium);
   }
 }
 .secimage {
@@ -141,7 +139,7 @@
   }
   .secmain:before {
     background-position: 3% 40%;
-    background-size: clamp(70%, 85% , 90%) auto;
+    background-size: clamp(70%, 85%, 90%) auto;
   }
   .mainText {
     display: grid;
@@ -153,22 +151,20 @@
     a,
     img {
       font-size: var(--fs-small);
-      max-width: 120px;
       height: 50px;
     }
   }
 }
 @media (max-width: 480px) {
- 
   .secContact {
     width: 100%;
     padding: 0 0.2rem;
     button {
-      font-size: var(--fs-small);
+      padding: 0 1rem;
+      font-size: var(--fs-xsmall);
       max-width: 120px;
       height: 40px;
     }
-    a,
     img {
       margin: 0;
       max-width: 40px;

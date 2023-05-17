@@ -6,7 +6,7 @@
   background-color: var(--dark-color);
   padding: 2rem 0;
   transition: transform 2s ease;
-  h1{
+  h1 {
     text-align: center;
     color: var(--main-color);
     font-size: var(--fs-large);
@@ -23,11 +23,11 @@
   width: 100%;
   transition: transform 1s;
 }
-.border{
+.border {
   border-bottom: 5px dashed var(--sec-color);
   border-top: 5px dashed var(--sec-color);
-  button{
-    margin: 0 0 1rem 2rem; 
+  button {
+    margin: 0 0 1rem 2rem;
     min-width: max(25%, 200px);
     background-color: var(--main-color);
     color: var(--dark-color);
@@ -56,18 +56,3 @@
 .rightArrow {
   left: -3px;
 }
-// @media (max-width: 1320px) {
-//   .box {
-//     min-width: calc((100% - 12rem) / 3);
-//   }
-// }
-// @media (max-width: 940px) {
-//   .box {
-//     min-width: calc((100% - 8rem) / 2);
-//   }
-// }
-// @media (max-width: 680px) {
-//   .box {
-//     min-width: calc((100% - 4rem) / 1);
-//   }
-// }

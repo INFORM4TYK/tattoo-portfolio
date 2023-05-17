@@ -2,7 +2,6 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 2rem;
   background-color: var(--sec-color);
   label > span,
   p {
@@ -18,7 +17,7 @@
 .secForm {
   color: var(--text-dark);
   border-radius: 5px 0 0 5px;
-  min-width: max(80%,600px);
+  min-width: max(80%, 600px);
   margin-left: auto;
   h1 {
     font-size: var(--fs-large);
@@ -37,7 +36,6 @@
       justify-content: center;
       align-items: center;
     }
-    
   }
   label > span {
     color: red;
@@ -53,6 +51,11 @@
   div {
     width: 80%;
     margin-bottom: 1rem;
+  }
+  div:hover {
+    scale: 1.1;
+    transition: all 0.3s ease;
+    background-color: rgb(217, 192, 163, 0.3);
   }
   a {
     width: 100%;
@@ -121,33 +124,35 @@
   }
 }
 @media (max-width: 1200px) {
-    .secForm{
-        min-width: 100%;
-        margin-left: 0;
-    }
-}
-@media (max-width: 1000px) {
-    .container{
-        grid-template-columns: 1fr;
-        padding: 0 auto;
-    }
-    .secForm,.secContact{
-        padding-inline: 6rem;
-        border: none;
-    }
-}
-@media (max-width: 700px) {
-  .secForm,.secContact{
-      padding-inline: 4rem;
+  .secForm {
+    min-width: 100%;
+    margin-left: 0;
   }
 }
-  
+@media (max-width: 1000px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 0 auto;
+  }
+  .secForm,
+  .secContact {
+    padding-inline: 6rem;
+    border: none;
+  }
+}
+@media (max-width: 700px) {
+  .secForm,
+  .secContact {
+    padding-inline: 4rem;
+  }
+}
+
 @media (max-width: 500px) {
   .form {
     display: block;
   }
   .secForm {
-    padding: 0 2rem ;
+    padding: 0 2rem;
     max-width: calc(100% - 5rem);
     width: 100%;
     textarea,
@@ -168,7 +173,7 @@
       flex-direction: row;
       flex-wrap: wrap;
       padding: 0 1rem;
-      p{
+      p {
         font-size: var(--fs-medium);
       }
     }

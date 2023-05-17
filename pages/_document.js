@@ -9,7 +9,6 @@ export default function Document() {
   return (
     <Html lang="pl">
       <Head>
-        {/* <title>{CustomTitle || title}</title> */}
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
         <meta charset="UTF-8" />

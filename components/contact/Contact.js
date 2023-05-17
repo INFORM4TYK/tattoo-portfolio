@@ -192,7 +192,7 @@ const Contact = () => {
           </Link>
         </div>
         <div>
-          <Link href="#" target="_blank">
+          <Link href="https://www.tiktok.com/@victoriu.tattoo" target="_blank">
             <Image src={Tiktok} alt="tiktok" />
             <p>TikTok</p>
           </Link>

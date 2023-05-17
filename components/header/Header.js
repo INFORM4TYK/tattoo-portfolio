@@ -27,14 +27,16 @@ const Header = () => {
             >
               <Image src={Instagram} alt="instagram" />
             </Link>
-            <Link href="#" legacyBehavior>
+            <Link href="https://www.tiktok.com/@victoriu.tattoo" legacyBehavior>
               <a>
                 <Image src={Tiktok} alt="tiktok" />
               </a>
             </Link>
           </div>
           <div>
-            <button><a href="#contact">Skontaktuj się</a></button>
+            <a href="#contact">
+              <button className="button">Skontaktuj się</button>
+            </a>
           </div>
         </section>
       </section>

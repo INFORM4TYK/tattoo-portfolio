@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@100;400;700;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap");
 :root {
   --color-white: #ffffff;
   --color-black: #222222;
-  --main-color: #D9C0A3;
-  --dark-color: #593D2D;
-  --sec-color: #BFA58E;
-  --text-dark: #4F250B;
+  --main-color: #d9c0a3;
+  --dark-color: #593d2d;
+  --sec-color: #bfa58e;
+  --text-dark: #4f250b;
   --fs-xsmall: 0.7rem;
   --fs-small: 0.9rem;
   --fs-medium: 1.2rem;
@@ -15,7 +15,7 @@
   --fs-xlarge: 5rem;
   --fs-xxlarge: 6rem;
   --ff-main: "Lato", sans-serif;
-  --ff-sec: 'Castoro Titling', cursive;
+  --ff-sec: "Castoro Titling", cursive;
   color: var(--color-grey-dark);
 }
 body,
@@ -41,7 +41,6 @@ li {
   text-decoration: none;
   color: var(--color-black);
 }
-button{
- cursor: pointer;
+button {
+  cursor: pointer;
 }
-

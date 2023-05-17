@@ -46,7 +46,7 @@ const ArticleList = ({ aktu }) => {
       currentVisibleArticle={currentVisibleArticle}
     >
       <Article
-       aktu={aktu}
+        aktu={aktu}
         currentVisibleArticle={currentVisibleArticle}
         width={width}
         className={styles.box}

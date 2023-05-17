@@ -22,18 +22,17 @@ export const Article = (props) => {
         }}
       >
         {aktu.map((item) => {
-          const { title, topic,date, thumbNail } = item.fields;
+          const { title, topic, date, thumbNail } = item.fields;
           const { id } = item.sys;
           return (
             <div key={id} className="box">
-              <Image 
-              src={'https:' + thumbNail.fields.file.url}
-              width={thumbNail.fields.file.details.image.width}
-              height={thumbNail.fields.file.details.image.height}
-              alt={topic}
+              <Image
+                src={"https:" + thumbNail.fields.file.url}
+                width={thumbNail.fields.file.details.image.width}
+                height={thumbNail.fields.file.details.image.height}
+                alt={topic}
+                priority={true}
               />
-              {/* <h2>Motyw: {title}</h2>
-              <p>{date}</p> */}
             </div>
           );
         })}
