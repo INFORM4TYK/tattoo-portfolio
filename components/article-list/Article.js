@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Article.module.scss";
-import Link from "next/link";
+
 import Image from "next/image";
 export const Article = (props) => {
   const { currentVisibleArticle, width, aktu } = props;
@@ -28,8 +28,8 @@ export const Article = (props) => {
             <div key={id} className="box">
               <Image
                 src={"https:" + thumbNail.fields.file.url}
-                width={thumbNail.fields.file.details.image.width}
-                height={thumbNail.fields.file.details.image.height}
+                width={500}
+                height={450}
                 alt={topic}
                 priority={true}
               />

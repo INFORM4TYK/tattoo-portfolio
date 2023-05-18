@@ -14,16 +14,19 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  p {
-    z-index: 1;
-    font-weight: 700;
-    color: var(--text-dark);
-    font-size: var(--fs-xxlarge);
-    font-family: var(--ff-sec);
-  }
+  
+   
   p:nth-child(2) {
     padding-left: 20vw;
   }
+}
+.mainText{
+  z-index: 1;
+  font-weight: 700;
+  color: var(--text-dark);
+  font-size: var(--fs-xxlarge);
+  font-family: var(--ff-sec);
+
 }
 .secmain:before {
   content: " ";

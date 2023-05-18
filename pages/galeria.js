@@ -3,6 +3,8 @@ import { getArticles } from "../lib/Api";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { useState, useEffect } from "react";
+import Skeleton from "../components/utils/Skeleton";
 export async function getStaticProps() {
   const aktu = await getArticles();
   return {
@@ -13,7 +15,18 @@ export async function getStaticProps() {
   };
 }
 
-export default function Galeria({ aktu }) {
+export default function Galeria(props) {
+  const { currentVisibleArticle, width, aktu } = props;
+  const [visibleColumns, setVisibleColumns] = useState(1);
+  useEffect(() => {
+    if (width > 1320) setVisibleColumns(4);
+    else if (width > 940) setVisibleColumns(3);
+    else if (width > 680) setVisibleColumns(2);
+    else setVisibleColumns(1);
+  }, [width]);
+
+  if (!aktu) return <Skeleton />;
+
   return (
     <>
       <Head>
@@ -36,8 +49,8 @@ export default function Galeria({ aktu }) {
               <div key={id} className="box">
                 <Image
                   src={"https:" + thumbNail.fields.file.url}
-                  width={thumbNail.fields.file.details.image.width}
-                  height={thumbNail.fields.file.details.image.height}
+                  width={500}
+                  height={500}
                   alt={topic}
                   priority={true}
                 />

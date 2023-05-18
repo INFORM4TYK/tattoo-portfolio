@@ -4,7 +4,7 @@
   --color-white: #ffffff;
   --color-black: #222222;
   --main-color: #d9c0a3;
-  --dark-color: #593d2d;
+  --dark-color: rgb(89, 61, 45);
   --sec-color: #bfa58e;
   --text-dark: #4f250b;
   --fs-xsmall: 0.7rem;
@@ -27,6 +27,7 @@ html {
   box-sizing: border-box;
   font-size: 100%;
   font-family: var(--ff-main);
+  background-color: var(--main-color);
 }
 *,
 *::after,

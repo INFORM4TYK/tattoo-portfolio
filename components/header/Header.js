@@ -1,6 +1,6 @@
 import styles from "./Header.module.scss";
 import Image from "next/image";
-import ImgHeader from "../../images/header.jpg";
+import ImgHeader from "../../images/headerImg.jpg";
 import Facebook from "../../images/facebook.svg";
 import Instagram from "../../images/instagram.svg";
 import Tiktok from "../../images/tiktok.svg";
@@ -27,7 +27,7 @@ const Header = () => {
             >
               <Image src={Instagram} alt="instagram" />
             </Link>
-            <Link href="https://www.tiktok.com/@victoriu.tattoo"  legacyBehavior>
+            <Link href="https://www.tiktok.com/@victoriu.tattoo" legacyBehavior>
               <a target="_blank">
                 <Image src={Tiktok} alt="tiktok" />
               </a>
@@ -41,7 +41,11 @@ const Header = () => {
         </section>
       </section>
       <section className={styles.secimage}>
-        <Image src={ImgHeader} alt="tattoimg" priority={true} />
+        <Image src={ImgHeader} 
+        alt="tattoimg" 
+        priority={true} 
+        height={600}
+        width={600}/>
       </section>
     </header>
   );

@@ -1,0 +1,15 @@
+.container {
+  padding: 2rem;
+  display: grid;
+  text-align: justify;
+  h2,
+  h3 {
+    text-align: center;
+  }
+  h2,
+  h3,
+  p {
+    color: var(--text-dark);
+    margin-bottom: 1.4rem;
+  }
+}

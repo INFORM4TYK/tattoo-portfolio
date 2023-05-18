@@ -4,7 +4,13 @@
   bottom: 0;
   width: 100%;
   background-color: var(--dark-color);
-  color: var(--main-color);
   text-align: center;
   padding: 1.5rem 0;
+  a,p {
+    margin-bottom: .5rem;
+    color: var(--main-color);
+  }
+  a{
+    text-decoration: underline;
+  }
 }
