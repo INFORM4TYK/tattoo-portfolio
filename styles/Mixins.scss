@@ -36,7 +36,6 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  
   h2,
   p {
     color: var(--text-dark);
@@ -47,6 +46,7 @@
     border-radius: 5px;
     width: 100%;
     max-width: 500px;
+    height: auto;
     max-height: 600px;
   }
 }

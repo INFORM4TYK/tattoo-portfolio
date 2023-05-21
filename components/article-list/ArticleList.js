@@ -43,7 +43,6 @@ const ArticleList = ({ aktu }) => {
   return (
     <article
       className={styles.listContainer}
-      currentVisibleArticle={currentVisibleArticle}
     >
       <Article
         aktu={aktu}

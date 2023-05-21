@@ -4,6 +4,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import Button from "../components/utils/Button";
 import Skeleton from "../components/utils/Skeleton";
 export async function getStaticProps() {
   const aktu = await getArticles();
@@ -37,8 +38,7 @@ export default function Galeria(props) {
       <div className={styles.bg}>
         <div>
           <Link href="/" className={`${styles.button}`}>
-            {" "}
-            <button className="button">Powrót</button>{" "}
+            <Button />
           </Link>
         </div>
         <div className={styles.container}>

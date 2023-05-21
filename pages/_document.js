@@ -11,8 +11,8 @@ export default function Document() {
       <Head>
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="theme-color" content="#ffffff" />
         <meta name="color-scheme" content="light" />
         <meta property="og:title" content={title} />
@@ -23,7 +23,11 @@ export default function Document() {
         <meta property="og:url" content={siteURL} />
         <link rel="canonical" href={siteURL} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@100;400;700;900&display=swap"
           rel="stylesheet"

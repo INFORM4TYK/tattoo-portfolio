@@ -168,14 +168,8 @@ const Contact = () => {
       </section>
       <section className={styles.secContact}>
         <div>
-          <Link href="tel:516598487" target="_blank">
-            <Image src={Phone} alt="telefon" />
-            <p>516 598 487</p>
-          </Link>
-        </div>
-        <div>
           <Link
-            href="https://www.facebook.com/wiktoria.woznicka.52"
+            href="https://www.facebook.com/OlokonTattooArtStudio"
             target="_blank"
           >
             <Image src={Facebook} alt="facebook" />

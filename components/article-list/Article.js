@@ -22,7 +22,7 @@ export const Article = (props) => {
         }}
       >
         {aktu.map((item) => {
-          const { title, topic, date, thumbNail } = item.fields;
+          const { topic, thumbNail } = item.fields;
           const { id } = item.sys;
           return (
             <div key={id} className="box">

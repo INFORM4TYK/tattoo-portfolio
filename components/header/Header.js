@@ -16,7 +16,7 @@ const Header = () => {
         <section className={styles.secContact}>
           <div>
             <Link
-              href="https://www.facebook.com/wiktoria.woznicka.52"
+              href="https://www.facebook.com/OlokonTattooArtStudio"
               target="_blank"
             >
               <Image src={Facebook} alt="facebook" />

@@ -1,11 +1,16 @@
 import styles from "../styles/Rodo.module.scss";
+import Button from "../components/utils/Button";
+import Link from "next/link";
 const Rodo = () => {
   return (
     <div className={styles.container}>
+      <Link href="/">
+      <Button />
+      </Link>
       <h2>Data wejścia w życie: 18.05.2023</h2>
       <h3>
         Niniejsza polityka prywatności określa zasady przetwarzania danych
-        osobowych przez Wiktorię Woźnicką(Dalej nazywna Administratorem) w związku z korzystaniem z naszej
+        osobowych przez Wiktorię Woźnicką (Dalej przedstawianą jako Administrator) w związku z korzystaniem z naszej
         strony internetowej oraz formularza kontaktowego, zgodnie z wymogami
         ogólnego rozporządzenia o ochronie danych (RODO) i obowiązującym prawem
         Unii Europejskiej.

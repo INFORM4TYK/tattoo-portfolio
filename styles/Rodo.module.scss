@@ -2,9 +2,15 @@
   padding: 2rem;
   display: grid;
   text-align: justify;
+  button{
+    max-width: 300px;
+    width: 100%;
+  }
   h2,
   h3 {
     text-align: center;
+    padding-bottom: .5rem;
+    border-bottom: 1px dashed var(--text-dark);
   }
   h2,
   h3,
