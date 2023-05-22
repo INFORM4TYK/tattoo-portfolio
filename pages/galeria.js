@@ -94,7 +94,6 @@ export default function Galeria(props) {
           {clickedImg && (
             <Modal
               clickedImg={clickedImg}
-              currentIndex={currentIndex}
               setClickedImg={setClickedImg}
               handleRight={handleRight}
               handleLeft={handleLeft}
