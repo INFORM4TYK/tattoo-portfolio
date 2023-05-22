@@ -32,11 +32,12 @@
   left: 0;
 }
 .overlayarrows_left {
-    right: 0;
-  }
-.overlayarrows_left,.overlayarrows_right {
+  right: 0;
+}
+.overlayarrows_left,
+.overlayarrows_right {
   display: flex;
-  background-color: rgb(230, 223, 223, .4);
+  background-color: rgb(230, 223, 223, 0.4);
   justify-content: center;
   align-items: center;
   position: absolute;

@@ -11,14 +11,14 @@ const Modal = (props) => {
   return (
     <>
       <div className={styles.overlay} onClick={handleClick}>
-        <img src={clickedImg} alt={currentIndex} width={750} height={750}/>
+        <img src={clickedImg} alt={currentIndex} width={750} height={750} />
         <span onClick={handleClick}>X</span>
-      <div onClick={handleRight} className={styles.overlayarrows_left}>
-        <Image src={LeftArrow} alt="rightArrow" />
-      </div>
-      <div onClick={handleLeft} className={styles.overlayarrows_right}>
-        <Image src={RightArrow} alt="leftArrow" />
-      </div>
+        <div onClick={handleRight} className={styles.overlayarrows_left}>
+          <Image src={LeftArrow} alt="rightArrow" />
+        </div>
+        <div onClick={handleLeft} className={styles.overlayarrows_right}>
+          <Image src={RightArrow} alt="leftArrow" />
+        </div>
       </div>
     </>
   );

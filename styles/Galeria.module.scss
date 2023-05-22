@@ -4,13 +4,9 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   padding: 1rem;
-  gap: .8rem;
-  div{
+  gap: 0.8rem;
+  div {
     margin: 0;
-  }
-  img{
-    transition: all .2s ease-in-out;
-    max-height: 500px;
   }
   img:hover {
     scale: 1.01;
@@ -48,10 +44,9 @@
 @media (max-width: 580px) {
   .container {
     grid-template-columns: 1fr;
-    img{
-      transition: all .2s ease-in-out;
+    img {
+      transition: all 0.2s ease-in-out;
       max-height: 400px;
     }
   }
 }
-
