@@ -1,6 +1,6 @@
 import styles from "./Header.module.scss";
 import Image from "next/image";
-import ImgHeader from "../../images/headerImg.jpg";
+import ImgHeader from "../../public/headerImg.jpg";
 import Facebook from "../../images/facebook.svg";
 import Instagram from "../../images/instagram.svg";
 import Tiktok from "../../images/tiktok.svg";

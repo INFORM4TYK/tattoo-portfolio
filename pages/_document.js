@@ -5,7 +5,7 @@ export default function Document() {
   const keywords =
     "tatuaże,portfolio,tattoo,design,tatuaże artystyczne,tatuaże lekkie";
   const siteURL = "https://tattoo-iota.vercel.app";
-  const img = "https://tattoo-iota.vercel.app/header.jpg";
+  const img = "https://tattoo-iota.vercel.app/headerImg.jpg";
   return (
     <Html lang="pl">
       <Head>

@@ -1,11 +1,12 @@
 const Skeleton = () => {
     return ( 
-        <div style={{
+        <span style={{
             width: '100%',
-            height: 'auto',
-            background: 'rgb(89, 61, 45)'
+            height: '500px',
+            background: 'rgb(89, 61, 45, .3)'
         }}>
-        </div>
+            
+        </span>
      );
 }
  
