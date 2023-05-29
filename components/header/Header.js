@@ -10,8 +10,8 @@ const Header = () => {
     <header className={styles.header}>
       <section className={styles.secmain}>
         <div className={styles.mainText}>
-          <p>VICTORIUU</p>
-          <p>TATTOO</p>
+          <p>Wiktoria</p>
+          <p>Woźnicka</p>
         </div>
         <section className={styles.secContact}>
           <div>

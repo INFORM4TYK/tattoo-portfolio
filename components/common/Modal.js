@@ -11,7 +11,7 @@ const Modal = (props) => {
   return (
     <>
       <div className={styles.overlay} onClick={handleClick}>
-        <img src={clickedImg} alt={currentIndex} width={750} height={750} />
+        <img src={clickedImg} alt={currentIndex} width={750} height={750} loading="lazy" />
         <span onClick={handleClick}>X</span>
         <div onClick={handleRight} className={styles.overlayarrows_left}>
           <Image src={LeftArrow} alt="rightArrow" />

@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@100;400;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 :root {
   --color-white: #ffffff;
   --color-black: #222222;
-  --main-color: #d9c0a3;
+  --main-color: #bfa58e;
   --dark-color: rgb(89, 61, 45);
-  --sec-color: #bfa58e;
+  --sec-color: #d9c0a3;
   --text-dark: #4f250b;
   --fs-xsmall: 0.7rem;
   --fs-small: 0.9rem;
@@ -15,7 +16,7 @@
   --fs-xlarge: 5rem;
   --fs-xxlarge: 6rem;
   --ff-main: "Lato", sans-serif;
-  --ff-sec: "Castoro Titling", cursive;
+  --ff-sec: 'Cinzel', serif;;
   color: var(--color-grey-dark);
 }
 body,
